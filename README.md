@@ -7,6 +7,13 @@ Essentially, when your loop is finished, you get a report at the end counting wa
 
 		There were 2 errors and 12 warnings while processing customers.	
 
+##Install
+
+Add as a dependency in your package.json file
+
+    "ender": "git://github.com/robjames/ender.git"
+
+Then `npm install`
 
 
 ##usage
