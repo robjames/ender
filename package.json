@@ -1,5 +1,5 @@
 {
   "name": "ender",
   "description": "A node module that you call during loops, to report on end.",
-  "version": "0.0.1"
+  "version": "0.0.2"
 }
