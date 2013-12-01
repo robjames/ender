@@ -83,10 +83,11 @@ On occasions you might not know the length of the data before being looped - lik
 				} else {
 					customerEnder.incError();
 				}
+				return customerEnder.end();
 			}
 			
 			//all ok
-			customerEnder.end(); //call end ALWAYS.
+			customerEnder.end(); //call end ALWAYS. (this means you also might need to include it in the error block)
 	
 		})
 			
