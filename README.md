@@ -7,6 +7,8 @@ Essentially, when your loop is finished, you get a report at the end counting wa
 
 		There were 2 errors and 12 warnings while processing 2345 customers.	
 
+Most notably, I use this on streams, where the end event is not necessarily called when you have finished processing the data asynchronously.
+
 ##Install
 
 Add as a dependency in your package.json file
@@ -71,6 +73,11 @@ When the loop has finished, you will get something like this in the console.log
 On occasions you might not know the length of the data before being looped - like when importing a csv using streams (the origninal use of this module) - in this case you can manually increment the count, just before processing the action.
 
 ```javascript
+	var customerEnder = new ender('customers');
+	
+	...
+	...
+
 	.on('data', function(chunk){
 	
 		customerEnder.incLength();
