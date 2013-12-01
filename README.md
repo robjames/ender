@@ -24,6 +24,7 @@ ender returns a constructor;
 
 So you can create new instances like:
 
+	javascript
 	var customerEnder = new ender();
 
 The ender constructor can take 2 perameters: name and length; where length is the array length.
@@ -33,6 +34,7 @@ The ender constructor can take 2 perameters: name and length; where length is th
 
 There are some exposed methods that you can call.
 
+	js
 	var customerEnder = new ender('customers', someArray.length);
 	
 	someArray.forEach(function(item, i, arr){
@@ -61,6 +63,7 @@ When the loop has finished, you will get something like this in the console.log
 	
 On occasions you might not know the length of the data before being looped - like when importing a csv using streams (the origninal use of this module) - in this case you can manually increment the count, just before processing the action.
 
+	JS
 	.on('data', function(chunk){
 	
 		customerEnder.inclength();
