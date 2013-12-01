@@ -5,7 +5,7 @@ A node module that you call during loops, to report on end.
 
 Essentially, when your loop is finished, you get a report at the end counting warnings and errors.
 
-		There were 2 errors and 12 warnings while processing customers.	
+		There were 2 errors and 12 warnings while processing 2345 customers.	
 
 ##Install
 
@@ -66,9 +66,8 @@ There are some exposed methods that you can call.
 
 When the loop has finished, you will get something like this in the console.log
 
-	There were 2 errors and 12 warnings while processing customers.	
+	There were 2 errors and 12 warnings while processing 3456 customers.	
 
-	
 On occasions you might not know the length of the data before being looped - like when importing a csv using streams (the origninal use of this module) - in this case you can manually increment the count, just before processing the action.
 
 ```javascript

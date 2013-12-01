@@ -8,7 +8,7 @@ var ender = function(name, length){
 	
 	this.hasEnded = function(){
 		if (that.count === that.length) {
-			console.log("There were %d errors and %d warnings while processing %s.", that.errorCount, that.warningCount, that.name);	
+			console.log("There were %d errors and %d warnings while processing %d %s.", that.errorCount, that.warningCount, that.length, that.name);	
 		}
 	}
 }
