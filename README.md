@@ -70,6 +70,8 @@ When the loop has finished, you will get something like this in the console.log
 
 	There were 2 errors and 12 warnings while processing 3456 customers.	
 
+##Streams
+
 On occasions you might not know the length of the data before being looped - like when importing a csv using streams (the origninal use of this module) - in this case you can manually increment the count, just before processing the action.
 
 ```javascript
