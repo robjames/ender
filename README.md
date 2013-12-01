@@ -11,7 +11,9 @@ Essentially, when your loop is finished, you get a report at the end counting wa
 
 Add as a dependency in your package.json file
 
-    "ender": "git://github.com/robjames/ender.git"
+```javascript
+	"ender": "git://github.com/robjames/ender.git"
+```
 
 Then `npm install`
 
@@ -20,19 +22,26 @@ Then `npm install`
 
 ender returns a constructor;
 
+```javascript
 	var ender = require('ender');
+```
 
 So you can create new instances like:
 
+```javascript
 	var customerEnder = new ender();
+```
 
 The ender constructor can take 2 perameters: name and length; where length is the array length.
 *Note, it is not requred to provide the length; you can increment it manually.*
 
+```javascript
 	var customerEnder = new ender('cusstomers', customerArray.length);
+```
 
 There are some exposed methods that you can call.
 
+```javascript
 	var customerEnder = new ender('customers', someArray.length);
 	
 	someArray.forEach(function(item, i, arr){
@@ -53,6 +62,7 @@ There are some exposed methods that you can call.
 		})
 		
 	})
+```
 
 When the loop has finished, you will get something like this in the console.log
 
@@ -61,6 +71,7 @@ When the loop has finished, you will get something like this in the console.log
 	
 On occasions you might not know the length of the data before being looped - like when importing a csv using streams (the origninal use of this module) - in this case you can manually increment the count, just before processing the action.
 
+```javascript
 	.on('data', function(chunk){
 	
 		customerEnder.incLength();
@@ -80,3 +91,4 @@ On occasions you might not know the length of the data before being looped - lik
 		})
 			
 	})
+```
