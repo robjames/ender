@@ -35,7 +35,7 @@ So you can create new instances like:
 ```
 
 The ender constructor can take 2 perameters: name and length; where length is the array length.
-*Note, it is not requred to provide the length; you can increment it manually.*
+*Note, it is not requred to provide the length; you can increment it manually. See streams below.*
 
 ```javascript
 	var customerEnder = new ender('cusstomers', customerArray.length);
