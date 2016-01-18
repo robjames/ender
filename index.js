@@ -6,12 +6,16 @@ var ender = function(name, length){
 	this.warningCount = 0;
 	this.errorCount = 0;
 	
-	this.hasEnded = function(){
-		if (that.count === that.length) {
-			console.log("There were %d errors and %d warnings while processing %d %s.", that.errorCount, that.warningCount, that.length, that.name);	
+	
+}
+ender.prototype.hasEnded = function(){
+		if (this.count === this.length) {
+			console.log("There were %d errors and %d warnings while processing %d %s.", this.errorCount, this.warningCount, this.length, this.name);	
+			return true;
+		} else {
+			return false;
 		}
 	}
-}
 ender.prototype.incLength = function(){
 	this.length++
 }
